@@ -12,3 +12,28 @@
     text-decoration: none;
     color: white;
 }
+
+
+.css-text-mask {
+    font-size: 25px;
+    font-family: Arial Black, Gadget, sans-serif;
+    font-weight: bold;
+    background-image: url('https://img.freepik.com/premium-photo/abstract-bokeh-background_996449-1641.jpg?w=900');
+    background-position: 0px 0px;
+    -webkit-animation: animatedBackground 10s linear infinite normal;
+    -webkit-text-stroke-width: .5px;
+    /* -webkit-text-stroke-color: #2907e6; */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+}
+
+@-webkit-keyframes animatedBackground {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: 500px 0
+    }
+}

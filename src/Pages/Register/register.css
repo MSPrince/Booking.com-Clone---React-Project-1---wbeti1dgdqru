@@ -6,6 +6,9 @@
     z-index: 10;
     height: 100%;
     width: 100%;
-    background-color: white;
+    /* background-color: rgb(224, 2, 2); */
+    background: url(https://img.freepik.com/premium-photo/happy-woman-with-camera-passport-waiting-travel-by-plane_28717-302.jpg?w=900);
+    background-size: 100vw 100vh;
+    background-position: center;
 }
 
