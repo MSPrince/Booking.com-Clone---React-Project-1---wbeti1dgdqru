@@ -1,0 +1,177 @@
+
+#navbar{
+    /* border: 1px solid black; */
+    background-color: #003b95;
+    color: white;
+
+}
+
+.nav-container{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+
+}
+
+#reg-div{
+    /* border: 1px solid pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding-top: 16px;
+}
+
+#booking-logo a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+#btn-container{
+    display: flex;
+    gap: 4px;
+
+}
+
+.reg-btn{
+    padding: 5px 5px;
+    background-color: white;
+    color: #006CE4;
+    border: 1px solid #006CE4;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#navigation-Links{
+    /* border: 2px solid red; */
+    position: relative;
+    z-index: 2;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+}
+
+#links-container{
+    /* border: 2px solid yellow; */
+    display: flex;
+    padding: 18px 0px;
+    gap: 4px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#links-container::-webkit-scrollbar{
+    display: none;
+}
+
+#links-container li{
+    list-style: none;
+
+}
+
+
+
+#links-container li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    font-weight: 400;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.navLinkIcon{
+    font-size: 22px;
+}
+
+#links-container li a:hover{
+    /* border: 1px solid white; */
+   background-color: #0046a8;
+}
+
+
+
+#links-container li .active{
+    background-color: #0046a8;
+    border: 1px solid white;
+}
+
+.profile-icon-container{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+#user-icon{
+    /* border: 2px solid black; */
+    color: #003580;
+    background-color: white;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+
+.profile-modal{
+    position: absolute;
+    z-index: 1000; 
+    right: 0px;
+    top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100px;
+    background-color: white;
+    padding: 10px 5px;
+    box-shadow: 0px 2px 8px 0px grey;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 480px) {
+       #reg-div{
+        margin: 0px 8px;
+
+       }
+}
+
+
+
+.css-text-mask {
+    font-size: 25px;
+    font-family: Arial Black, Gadget, sans-serif;
+    font-weight: bold;
+    background-image: url('https://img.freepik.com/premium-photo/abstract-bokeh-background_996449-1641.jpg?w=900');
+    background-position: 0px 0px;
+    -webkit-animation: animatedBackground 10s linear infinite normal;
+    -webkit-text-stroke-width: .5px;
+    /* -webkit-text-stroke-color: #2907e6; */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+}
+
+@-webkit-keyframes animatedBackground {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: 500px 0
+    }
+}
+
+
+

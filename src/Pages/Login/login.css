@@ -1,0 +1,72 @@
+.login-section{
+    /* border: 2px solid red; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+}
+
+.login-form-content{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form{
+    /* border: 2px solid red; */
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-form > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form > div > input{
+    height: 32px;
+    font-size: 14px;
+    padding: 0px 4px;
+    border: 1px solid black;
+    border-radius: 4px;
+   
+}
+
+.login-form > div > input[type='submit']{
+    background-color: #006CE4;
+    color: white;
+    font-size: 16px;
+    height: 44px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-form > div > input[type='submit']:hover{
+    background-color: #003580;
+}
+
+.login-form > div > label{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-form > div > p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-form > div > p > a{
+    text-decoration: none;
+    color: blue;
+}
+
+.login-form > div > p > a:hover{
+    text-decoration: underline;
+}

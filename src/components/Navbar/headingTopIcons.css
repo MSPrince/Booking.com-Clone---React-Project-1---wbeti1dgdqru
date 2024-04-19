@@ -1,0 +1,38 @@
+.headingTopIconsContainer{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 12px;
+    margin-right: 8px;
+}
+
+
+
+.topIcons{
+    /* border: 1px solid red; */
+    font-weight: 500;
+    padding: 6px 8px;
+    border-radius: 4px;
+    
+}
+
+.topIcons:hover{
+    background-color: #0046a8;
+    cursor: not-allowed;
+}
+.indiaFlag{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.questionMark{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 650px) {
+    .headingTopIconsContainer{
+        display: none;
+    }
+}

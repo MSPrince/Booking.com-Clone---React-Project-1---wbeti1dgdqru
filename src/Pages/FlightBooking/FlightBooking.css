@@ -1,0 +1,164 @@
+.flight-booking-page {
+    /* border: 3px solid black; */
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    background-color: white;
+    padding-bottom: 40px;
+    z-index: 999;
+    
+}
+
+.detail-payment-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.flight-travellers-contact-details-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.traveller-count-date-div {
+    display: flex;
+    gap: 8px;
+}
+
+
+.where-to-where-from>h1 {
+    font-size: 32px;
+}
+
+.Who-flying-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.Who-flying-container>h2 {
+    font-size: 24px;
+}
+
+.flight-contact-details-container {
+    border: 1px solid #e7e7e7;
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 8px;
+
+}
+
+.flight-contact-details-container>h3 {
+    font-size: 22px;
+}
+
+.flight-contact-details-input-div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 50%;
+}
+
+.flight-contact-details-input-div input{
+     padding: 10px 12px;
+     font-size: 14px;
+     color: rgb(31, 31, 31);
+     border-radius: 4px;
+     border: 1px solid grey;
+     
+}
+
+.flight-travellers-name-container{
+    border: 1px solid #e7e7e7;
+    /* border: 1px solid grey; */
+
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    margin-top: 28px;
+}
+
+.first-last-name-div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 40%;
+
+}
+
+.first-last-name-div input{
+    padding: 10px 12px;
+    font-size: 14px;
+    color: rgb(31, 31, 31);
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+
+.travellers-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flight-traveller-gender-div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 40%;
+}
+
+.flight-traveller-gender-div select{
+    padding: 10px 12px;
+    font-size: 14px;
+    color: rgb(31, 31, 31);
+    border-radius: 4px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.gender-error-msg{
+    margin-top: 8px;
+}
+
+.flight-next-btn{
+    margin-top: 8px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .flight-contact-details-input-div{
+        width: 100%;
+    }
+
+    .travellers-info{
+       flex-direction: column;
+       gap: 8px;
+       /* border: 2px solid red; */
+      
+    }
+
+    .first-last-name-div{
+        width: 100%;
+    }
+
+    .flight-traveller-gender-div{
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+
+
+}
+
+
+
+
+

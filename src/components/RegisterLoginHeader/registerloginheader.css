@@ -1,0 +1,14 @@
+.register-header{
+    background-color: #003B95;
+}
+
+.register-header-content{
+    /* border: 2px solid black; */
+    padding: 20px 0px;
+
+}
+
+.register-header-content a{
+    text-decoration: none;
+    color: white;
+}

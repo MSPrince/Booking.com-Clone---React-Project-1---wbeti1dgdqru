@@ -1,0 +1,84 @@
+
+
+/* POPULAR FLIGHTS SECTION */
+.popular-flights{
+    /* border: 2px solid black; */
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.popular-flight-buttons{
+    border-bottom: 1px solid #dedede;
+}
+
+
+.inter-domestic-btn{
+    padding: 16px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #006CE4;
+    background-color: white;
+    border: none;
+}
+
+.inter-domestic-btn:hover{
+    background-color: #ddedff;
+}
+
+.add-border{
+    border-bottom: 2px solid #006CE4;
+}
+
+
+
+.int-dom-item img{
+    border-radius: 8px;
+    width: 240px;
+    height: 197px;
+    object-fit: cover;
+}
+
+
+/* TRENDING CITIES SECTION */
+.flight-trending-cities{
+   /* border: 2px solid red; */
+   margin-top: 60px;
+}
+
+.trending-city-imgDiv{
+    margin-top: 20px;
+}
+
+.trending-city-imgDiv img{
+    border-radius: 8px;
+    width: 240px;
+    height: 197px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .popular-flight-heading{
+        text-align: center;
+    }
+
+    .popular-flight-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flight-trending-cities-heading{
+        text-align: center;
+    }
+}
+
+
+ 
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+.coming-soon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coming-soon-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}

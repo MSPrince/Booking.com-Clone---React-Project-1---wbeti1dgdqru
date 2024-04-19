@@ -1,0 +1,31 @@
+.explore-India-container{
+  /* border: 2px solid black; */
+ margin-top: 60px;
+}
+
+.explore-India-container p{
+    color: rgb(69, 69, 69);
+}
+
+.explore-India-content{
+    /* border: 2px solid blue; */
+   margin-top: 16px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 12px;
+   justify-content: center;
+   align-items: center;
+}
+
+.explore-India-details img{
+    border-radius: 8px;
+    width: 160px;
+    object-fit: cover;
+    height: 136px;
+}
+
+@media screen and (max-width: 768px) {
+    .explore-India-heading{
+        text-align: center;
+    }
+}

@@ -1,0 +1,175 @@
+
+.flights-list-content {
+    padding: 5px;
+}
+
+.flight-sorting-btn-container {
+    border: 1px solid grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 4px;
+    overflow: hidden;
+
+}
+
+.flight-sorting-btn {
+    font-size: 16px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.flight-sorting-btn:hover {
+    background-color: rgb(237, 237, 237);
+}
+
+.add-bottom-border {
+    border-bottom: 2px solid #006CE4;
+    color: #006CE4;
+
+}
+
+.flight-results-div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.flight-cards {
+    border: 1px solid grey;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.flight-timing-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 8px;
+    align-items: center;
+}
+
+.left-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+
+}
+
+.center-div {
+    text-align: center;
+}
+
+.right-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+
+.flight-price-div {
+    text-align: right;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-left: 1px solid grey;
+}
+
+.flight-price-div p {
+    font-size: 13px;
+    font-weight: bold;
+    color: #595959;
+}
+
+
+
+.bag-icon {
+    font-size: 16px;
+}
+
+.flight-not-found{
+    color: grey;
+}
+
+.loading-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-gif{
+    border-radius: 16px;
+    color: red;
+    width: 100px;
+    height: 100px;
+  
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    .flight-price-div {
+        gap: 4px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flight-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .flight-timing-div {
+        flex-wrap: nowrap;
+        padding: 8px;
+    }
+
+    .cabing-bag-div{
+        grid-area: cabin;
+    }
+
+    .flight-price-content{
+        grid-area: flightPrice;
+    }
+
+    .flight-price-div>button{
+        grid-area: seeflight-btn;
+    }
+
+
+    .flight-price-div {
+        display: grid;
+        gap: 8px;
+        grid-template-areas:
+        'cabin flightPrice'
+        'seeflight-btn seeflight-btn';
+        border-left: none;
+        border-top: 1px solid grey;
+
+
+    }
+
+    .cabin-bag-div{
+        text-align: left;
+    }
+
+    
+}

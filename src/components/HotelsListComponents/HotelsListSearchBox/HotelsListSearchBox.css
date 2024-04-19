@@ -1,0 +1,93 @@
+/* HOTEL LIST CONTENT => SEARCH BOX */
+.hotelslist-searchbox{
+    /* border: 2px solid black; */
+    background-color: #febb02;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 268px;
+    height: 340px;
+    padding: 12px;
+    border-radius: 8px;
+    position: sticky;
+    top: 10px;
+    z-index: 2;
+}
+
+.searchbox-items{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.searchbox-items > input[type="text"]{
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding-left: 4px;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.searchBox-date-div{
+    position: relative;
+}
+
+.searchBox-calender{
+    position: absolute;
+    top: 56px;
+    z-index: 3;
+    border: 1px solid #006CE4;
+}
+
+.hotelslist-date-span{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.person-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.person-items p{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.person-items > input[type="number"]{
+    border-radius: 2px;
+    border: none;
+    height: 20px;
+    padding-left: 2px;
+}
+
+.hotels-list-SearchBtn{
+    height: 34px;
+    background-color: #006CE4;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.hotels-list-SearchBtn:hover{
+    background-color: #003580;
+}
+
+@media screen and (max-width: 768px){
+    .hotelslist-searchbox{
+     display: none;
+
+    }
+
+}

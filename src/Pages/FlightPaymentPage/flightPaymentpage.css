@@ -1,0 +1,120 @@
+.flight-location-div{
+    margin-top: 30px;
+}
+
+.payment-traveller-date-div{
+    /* border: 2px solid red; */
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    color: rgb(110, 110, 110);
+
+}
+
+.flight-cost-details-container{
+    border: 1px solid gray;
+    margin-top: 40px;
+    padding: 10px 0px;
+    padding-left: 10px;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.flight-price-detials{
+    /* border: 2px solid red; */
+    width: 30%;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.base-tax-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.flight-payment-container{
+    /* border: 1px solid grey; */
+    margin-top: 40px;
+    padding: 8px;
+}
+.payment-method-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /* border: 2px solid red; */
+    width: 50%;
+}
+
+.payment-method-box>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-method-box input{
+    padding: 12px 16px;
+    font-size: 16px;
+    
+}
+
+.payment-cards-images-container {
+    display: flex;
+    gap: 8px;
+}
+
+.payment-cards-images-container>img {
+    width: 30px;
+    height: 18px;
+}
+
+
+#expiry-cvc-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#expiry-cvc-box>div {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+     .flight-cost-details-container{
+        margin-left: 8px;
+     }
+
+     .flight-price-detials{
+        width: 50%;
+     }
+
+     #expiry-cvc-box{
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flight-price-detials{
+        width: 70%;
+    } 
+
+    .payment-method-box{
+        width: 100%;
+    }
+
+    #expiry-cvc-box{
+        gap: 12px;
+    }
+
+
+}
+
+@media screen and (max-width: 350px) {
+    .flight-price-detials{
+        width: 100%;
+     }
+}

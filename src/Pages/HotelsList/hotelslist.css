@@ -1,0 +1,228 @@
+
+
+.hotels-list-content{
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+  
+   
+}
+
+.hotelList-button-container{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+   gap: 8px;
+}
+
+.hotel-sorting-btn{
+    background-color: white;
+    border: 2px solid rgb(202, 202, 202);
+    padding: 6px 8px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.hotel-sorting-btn:hover{
+    background-color: rgb(237, 237, 237);
+  
+}
+
+.sorting-btn-clicked{
+    border: 2px solid #006CE4;
+    color: #006CE4;
+    padding: 6px 8px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+/* HOTELS LIST DIV */
+.hotels-list-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    
+}
+
+/* HOTELS CARD */
+.hotel-list-cards{
+    display: flex;
+    gap: 12px;
+    padding: 8px;
+    box-shadow: 0px 2px 8px 0px grey;
+    border-radius: 4px;
+    
+}
+
+/* CARD -> IMAGE */
+.hotels-list-img-div > img{
+   width: 180px;
+   height: 180px;
+   object-fit: cover;
+}
+
+/* CARD -> DETAILS-PRICE-DIV */
+.details-price-div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* DETAILS-PRICE-DIV  -> DETAILS */
+.hotel-list-details-div{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hotel-list-details-div>h2{
+    color: #006CE4;
+}
+
+.airport-taxi{
+    display: inline-block;
+    width: fit-content;  
+    background-color: #008234;
+    color: white;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 4px;
+    
+}
+
+.bed-detail{
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.amenities-list{
+    list-style: none;
+    
+}
+
+.green-para{
+    color: #008234;
+    font-weight: bold;
+}
+
+/* DETAILS-PRICE-DIV  -> RATTING AND PRICE */
+.ratings-price-div{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+/* RATING-PRICE-DIV -> HOTEL-RATINGS */
+.hotels-rating{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.rating-para{
+    background-color: #006CE4;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* RATING-PRICE-DIV -> HOTELS-PRICE */
+.hotels-price{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hotels-price>p{
+    color: grey;
+}
+
+.hotels-price>button{
+    background-color: #006CE4;
+    width: 100%;
+    height: 32px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hotels-price>button:hover{
+    background-color: #003580;
+}
+
+.hotel-loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.hotel-loading > img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+   
+
+}
+
+.loading-comp{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 480px) {
+    .hotel-list-cards{
+        flex-direction: column;
+    }
+
+    .hotels-list-img-div{
+        width: 100%;
+    }
+    
+    .hotels-list-img-div > img{
+        width: 100%;
+        height: 240px;
+     }
+     .hotels-price>button{
+        height: auto;
+        padding: 10px 0px;
+     }
+
+     .loading-comp{
+        width: 100vw;
+        height: 100vh;
+     }
+}
+
+
+
+

@@ -1,0 +1,77 @@
+.select-room-content{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.room-inputBox-container{
+    /* border: 2px solid green; */
+    margin-top: 70px;
+    position: relative;
+    
+}
+
+.select-room-input-box{
+    
+    background-color: #febb02;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 4px;
+    position: sticky;
+    top: 4px;
+    left: 0;
+}
+
+.select-room-input-box>div{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.room-input-bar{
+    width: 36px;
+    height: 20px;
+    padding: 0px 2px;
+}
+.room-details{
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    width: 648px;
+}
+
+.room-details>h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hotel-room-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+
+}
+
+.hotel-room-card{
+    border: 1px solid grey;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.total-ammount{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .room-inputBox-container{
+        margin-top: 30px;
+       
+        
+    }
+}

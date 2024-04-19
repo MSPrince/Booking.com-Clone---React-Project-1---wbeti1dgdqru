@@ -1,0 +1,26 @@
+.profile-page{
+    /* background-color: green; */
+    height: 100vh;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.profile-details{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100px;
+    padding: 20px;
+    box-shadow: 0px 2px 8px 0px grey;
+    border-radius: 8px;
+}
+
+.profile-details > p{
+    font-weight: 500;
+    font-size: 18px;
+}

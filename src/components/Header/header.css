@@ -1,0 +1,275 @@
+.header-container {
+    /* border: 2px solid black; */
+    color: white;
+    background: rgb(255,250,252);
+    background: radial-gradient(circle, rgba(255,250,252,0) 80%, rgba(0,0,0,1) 100%);
+    position: relative;
+}
+
+.header-container::before{
+    content: "";
+    display: block;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/images/bookingAppFrontImage.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+
+.header-content {
+    /* border: 2px solid green; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 430px;
+
+
+}
+
+.next-stay-heading h1{
+    font-size: 3em;
+}
+
+
+/* SEARCH BOX CONTAINER */
+#header-SearchContainer {
+    background-color: #febb02;
+    border-radius: 5px;
+    /* height: 54px; */
+    padding: 5px 0px 5px 5px;
+    display: grid;
+    grid-template-columns: 8.7fr 1fr;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+}
+
+.hotel-input-boxes {
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+   
+}
+
+
+
+/* ICONS IN SEARCH CONTAINERS */
+.header-icon {
+    color: gray;
+    font-size: 24px;
+}
+
+/* SEARCH ELEMENTS */
+.headerSearchItem {
+    border-radius: 4px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: grey;
+    padding: 4px 6px;
+    background-color: white;
+
+
+}
+
+
+
+/* INPUT DIV */
+
+
+#inputtext-div {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0px;
+    width: 100%;
+    position: relative;
+
+}
+
+/* INPUT BAR */
+#input-text-bar {
+    height: 30px;
+    font-size: 15px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    width: 100%;
+    border: none;
+    padding: 2px;
+    padding-left: 4px;
+
+}
+
+#input-text-bar:focus{
+   border : none;
+    /* outline: 1px solid #006CE4; */
+    outline: none;
+    /* border-radius: 4px; */
+}
+
+#ioBedOutline{
+    font-size: 28px;
+}
+
+/* input div -> x icon */
+#crossX-icon {
+    /* background-color: yellow; */
+    color: grey;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    cursor: pointer;
+}
+
+/* DATE SECTION */
+
+#search-date{
+    /* border: 1px solid black; */
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.hotelDateLineIcon{
+   /* display: inline-block; */
+   /* border: 1px solid black; */
+   margin-bottom: 13px;
+   padding: 0px 8px;
+   
+}
+.date {
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+}
+
+    
+
+#person-count{
+    /* border: 1px solid black; */
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.personLuluDot{
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+#personDropDownIcon{
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+
+
+
+/* SEARCH BUTTON */
+.stay-search-button-div{
+    padding-right: 0px;
+}
+.same-btn {
+    background-color: #006CE4;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100px;
+    height: 44px;
+
+}
+
+.same-btn:hover {
+    background-color: #003580;
+}
+
+#search-button{
+    height: 48px;
+}
+.colors {
+    color: #febb02;
+    color: #003580;
+    color: #006CE4;
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        background-color: #f5f5f5;
+        color: black;
+        background: none;
+    }
+
+    
+
+    .header-container::before{
+        display: none;
+    }
+
+    .header-content {
+        flex-direction: column;
+        position: static;
+        gap: 16px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .next-stay-heading h1{
+        font-size: 2em;
+    }
+    
+
+    #header-SearchContainer {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: static;
+        padding: 4px;
+    }
+
+    .hotel-input-boxes {
+        /* border: 2px solid red; */
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4px;
+        padding-left: 0px;
+
+    }
+
+    .headerSearchItem {
+        position: relative;
+    }
+
+    #search-button {
+        width: 100%;
+    }
+}
+

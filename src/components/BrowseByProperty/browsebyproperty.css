@@ -1,0 +1,28 @@
+.browse-property-container{
+ /* border: 2px solid black; */
+ margin-top: 60px;
+ display: flex;
+ flex-direction: column;
+ gap: 16px;
+}
+
+.browse-property-content{
+   /* border: 2px solid red; */
+   display: flex;
+   flex-wrap: wrap;
+   gap: 16px;
+   justify-content: center;
+   align-items: center;
+}
+
+.browse-property-content img{
+    border-radius: 8px;
+    width: 244px;
+    height: 196px;
+}
+
+@media screen and (max-width: 768px) {
+    .browse-property-container>h2{
+        text-align: center;
+    }
+}
