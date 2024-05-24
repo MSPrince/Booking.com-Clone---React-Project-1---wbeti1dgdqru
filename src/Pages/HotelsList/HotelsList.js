@@ -136,7 +136,7 @@ export const HotelsList = () => {
 
             {hotelsData && hotelsData.length > 0 && (
               <div className="hotelList-button-container">
-                <button
+                {/* <button
                   className={
                     lowestClicked ? "sorting-btn-clicked" : "hotel-sorting-btn"
                   }
@@ -163,7 +163,7 @@ export const HotelsList = () => {
                   onClick={handleRatings}
                 >
                   Top Rated
-                </button>
+                </button> */}
               </div>
             )}
 

@@ -26,7 +26,7 @@ export const Footer = () => {
           online travel and related services.
         </p>
         <p>
-          <Link to="https://msprince-portfolio.netlify.app/">@M.S.Prince</Link>
+          <Link to="https://msprince-portfolio.netlify.app/" className="portfolio" target="parent">@M.S.Prince</Link>
         </p>
         <div className="logos-container">
           <img
